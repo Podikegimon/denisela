@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA CON CSS</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        font-family: 'Arial', sans-serif;
+    }
+    
+    nav{
+        background-color: CornflowerBlue;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+    }
+    .titulo_nav{
+        padding: 15px;
+        padding-left: 30px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    nav ul{
+        list-style: none;
+        text-align: right;
+        font-size: 16px;
+        margin-top: 18px;  
+        margin-right: 35px;      
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav ul li:hover{
+        cursor: pointer;
+        color: #94c3f8;
+    }
+    
+    .Perros{
+        display: inline-block;
+        margin-left: 100px;
+        margin-top: 50px;
+        width: 27%;
+        height: auto;
+        font-size: 10px;
+        border: 2px solid CadetBlue;
+        border-radius: 20px;
+        transition: all 0.5s ease;
+    }
+    .Perros img{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+    .Perros h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .Perros p{
+        margin: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .Perros:hover{
+        transform: scale(1.1);
+    }
+    
+    .Gatos{
+        display: inline-block;
+        margin: 15px;
+        margin-top: 10px;
+        width: 27%;
+        height: auto;
+        font-size: 10px;
+        border: 2px solid rgba(41, 98, 163, 0.5);
+        border-radius: 20px;
+        transition: all 0.5s ease;
+    }
+    .Gatos img{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+    .Gatos h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .Gatos p{
+        margin: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .Gatos:hover{
+        transform: scale(1.1);
+    }
+    
+    .Vacas{
+        display: inline-block;
+        margin-right: 10px;
+        width: 30%;
+        height: 27%;
+        font-size: 10px;
+        border: 2px solid rgba(94, 107, 228, 0.5);
+        border-radius: 20px;
+        transition: all 0.5s ease;
+    }
+    .Vacas img{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px 20px 0 0;
+    }
+    .Vacas h1{
+        text-align: left;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .Vacas p{
+        margin: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+    .Vacas:hover{
+        transform: scale(1.1);
+    }
+   
+    table{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;   
+        border-collapse: collapse;
+        border-left: 2px solid #ebdef0; 
+        border-right: 2px solid #ebdef0;
+        border-top: 2px solid #ebdef0;
+        margin-bottom: 100px;
+    }
+    table tr td{
+        border-bottom: 2px solid #ebdef0;
+        padding: 20px;
+    }
+    tr:nth-child(1){
+        background-color: #639eeb;
+        color: white;
+        font-weight: bold;
+    }
+    tr:hover{
+        background-color: #22589e44;
+    }
+    </style>
+</head>
+<body>
+    <nav><p class="titulo_nav">ANIMALES Y NATURALEZA</p>
+        <ul>
+            <li>Inicio</li>
+            <li>Galeria</li>
+            <li>Mas información</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <div class="Perros"><img src="https://static8.depositphotos.com/1377416/845/i/450/depositphotos_8457803-stock-photo-two-nice-puppies.jpg" alt="Perros">
+        <h1>Cachorros</h1>
+        <p>Animales domésticos leales e inteligentes, conocidos por su compañía y capacidad de aprendizaje. Son sociables y pueden ser entrenados para diversas tareas.</p>
+    </div>
+    <div class="Gatos"><img src="https://images.ecestaticos.com/N_vWPjAR7b-erAJJOcXtt1x5CaU=/0x183:2539x1614/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F782%2Fa64%2F421%2F782a64421b6a68a54f77c217e8837890.jpg" alt="Gatos">
+        <h1>Gatos</h1>
+        <p>Felinos independientes y ágiles, famosos por su curiosidad y sigilo. Son cariñosos, pero también disfrutan de su espacio personal.</p>
+    </div>
+    <div class="Vacas"><img src="https://media.istockphoto.com/id/1039925768/es/foto/calf_cow.jpg?s=612x612&w=0&k=20&c=LWIRet8IDzbCeUHbTK9R01DMq_YKToTfbZIJkE-z0bo=" alt="Vacas">
+        <h1>Vacas</h1>
+        <p>Mamíferos herbívoros grandes y domesticados, criados principalmente por su leche, carne y cuero. Son tranquilas y sociables en manadas.</p>
+    </div>
+    <table>
+        <tr>
+            <td>Animal</td>
+            <td>Características</td>
+            <td>Alimentación</td>
+            <td>Hábitat</td>
+        </tr>
+        <tr>
+            <td>Perro</td>
+            <td>Inteligente, sociable</td>
+            <td>Omnívoro</td>
+            <td>Hogares, campos</td>
+
+            
+        </tr>
+        <tr>
+            <td>Gato</td>
+            <td>Ágil, curioso</td>
+            <td>Carnívoro</td>
+            <td>Hogares, calles</td>
+            
+        </tr>
+        <tr>
+            <td>Vaca</td>
+            <td>Grande, sociable</td>
+            <td>Herbívoro</td>
+            <td>Granjas, praderas</td>
+        </tr>
+    
+    </table>
+</body>
+</html>
